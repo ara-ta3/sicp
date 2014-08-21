@@ -1,20 +1,20 @@
 <?php
 
 
+function pf(){
+    pf();
+}
+
 $p = function()
 {
-    $this();
+    pf();
 };
+
 
 function test($x, $y)
 {
-    if( $x == 0 )
-    {
-        return $x;
-    }
-    else
-    {
-        return $y();
-    }
+    $x == 0 ? $x : $y();
 }
+
 test(0, $p);
+//test(1, $p);
