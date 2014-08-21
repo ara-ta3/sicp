@@ -21,3 +21,7 @@
 (print (sum-of-largest-and-2nd-largest 1 3 2))
 
 (print (sum-of-largest-and-2nd-largest 1 2 3))
+
+(print (sum-of-largest-and-2nd-largest 1 3 3))
+
+(print (sum-of-largest-and-2nd-largest 3 3 3))
