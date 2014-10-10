@@ -63,7 +63,12 @@
 (print (h 1)) ; 2^1 2
 (print (h 2)) ; 2^(2^(2-1)) 4
 (print (h 3)) ; 2^(2^(3-1)) 16
-(print (h 4)) ; 2^(2^(4-1))
+;(print (h 4)) ; 2^(2^(4-1))
+
+(use slib)
+(require `trace)
+(trace A)
+(print (h 3))
 
 
 

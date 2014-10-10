@@ -4,7 +4,11 @@
     0
     y))
 
+(use slib)
+(require `trace)
+(trace p)
 (test 0 (p))
+
 
 ;これなに。ループ？
 
