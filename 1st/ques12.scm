@@ -18,3 +18,25 @@
 ; (pascal n)でn行出すとかやりたい。
 
 
+;(define (pascal n)
+;  (pascal-iter 1 n))
+
+;(define (pascal-line i y)
+;  (if (i > y)
+;    (print "")
+;    (print (pascal-part i y))
+;    ))
+
+;(define (pascal-iter y n)
+;  (if (> y n)
+;    (print "end")
+;    (pascal-line 1 y)
+;    ))
+
+;(use slib)
+;(require `trace)
+;(trace pascal-line)
+;(trace pascal-iter)
+;(trace pascal-part)
+;(pascal 10)
+
