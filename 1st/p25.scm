@@ -21,6 +21,8 @@
     (* b (expt b (- n 1)))))
 
 (trace expt)
+(print (expt 2 5))
 (print (expt 2 10))
+
 
 
