@@ -7,8 +7,8 @@
   (if (= n 0)
     a
     (if (even? n)
-      (square (expt-iter a b (/ n 2)))
-      (* b (expt-iter a b (- n 1)))
+      (expt-iter a (* b b) (/ n 2))
+      (expt-iter (* a b) b (- n 1))
       )))
 
 (define (even? n)
