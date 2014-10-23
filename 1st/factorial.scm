@@ -16,4 +16,8 @@
                max-count
                )))
 
+
+(use slib)
+(require `trace)
+(trace fact-iter)
 (print (factorial 5))

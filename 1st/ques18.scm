@@ -19,14 +19,14 @@
   (if (= b 0)
     t
     (if (even? b)
-      (fast-iter* t a (halve b))
+      (fast-iter* t (double a) (halve b))
       (fast-iter* (+ t a) a (- b 1))
       )))
 
 
 (use slib)
 (require `trace)
-(trace fast*)
+(trace fast-iter*)
 
 (print (fast* 2 2))
 (print (fast* 2 5))
