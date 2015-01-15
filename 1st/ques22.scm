@@ -17,18 +17,20 @@
 )
 
 (define (search-for-primes i end)
-  (cond ((divides? i 2) (search-for-primes (+ i 1) end))
-        ((> i end) "end")
-        (else 
+  (cond ((divides? 2 i) (search-for-primes (+ i 1) end))
+        ((< i end) 
             (timed-prime-test i)
             (search-for-primes (+ i 1) end)
             )
         )
   )
-
+(define (runtime)
+  (use srfi-11)
+  (let-values (((a b) (sys-gettimeofday)))
+              (+ (* a 1000000) b)))
 (use slib)
 (require `trace)
-(trace search-for-primes)
+;(trace search-for-primes)
 
-(print (search-for-primes 1000 10000))
+(print (search-for-primes 10000000 10010000))
 
