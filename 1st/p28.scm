@@ -7,7 +7,7 @@
         (else (find-divisor n (+ test-divisor 1)))))
 
 (define (divides? a b)
-  (= (remainder b a) 0)
+  (= (remainder b a) 0))
 
 (define (square x)
   (* x x))
