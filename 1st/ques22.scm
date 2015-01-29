@@ -1,4 +1,6 @@
 (load "./p28.scm")
+(load "./runtime.scm")
+(load "./trace.scm")
 
 (define (timed-prime-test n)
   (newline)
@@ -24,13 +26,8 @@
             )
         )
   )
-(define (runtime)
-  (use srfi-11)
-  (let-values (((a b) (sys-gettimeofday)))
-              (+ (* a 1000000) b)))
-(use slib)
-(require `trace)
+
 ;(trace search-for-primes)
 
-(print (search-for-primes 10000000 10010000))
+(print (search-for-primes 100000000 1001000000))
 
