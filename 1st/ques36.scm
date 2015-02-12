@@ -16,8 +16,8 @@
   (try first-guess))
 
 
-(print (fixed-point (lambda (x) (/ (log 1000) (log x)))
-                    10))
+;(print (fixed-point (lambda (x) (/ (log 1000) (log x)))
+;                    10))
 
 ;10
 ;2.9999999999999996
