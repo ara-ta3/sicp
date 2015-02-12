@@ -38,4 +38,12 @@
 (define (divides? a b)
   (= (remainder b a) 0))
 
+(define (good-enough? guess x)
+  (< (abs (- (square guess) x)) 0.001))
+
+(define (average a b)
+  (/ (+ a b) 2))
+
+(define (improve-sqrt guess x)
+  (average guess (/ x guess)))
 
