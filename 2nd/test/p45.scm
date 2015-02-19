@@ -15,3 +15,4 @@
 
 (test "numer" 1 (lambda () (numer (make-rat 1 2))))
 
+(test "make-rat" (cons 1 2) (lambda () (make-rat 2 4)))

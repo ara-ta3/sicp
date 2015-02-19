@@ -42,3 +42,7 @@
 ;(print-rat one-half)
 
 
+(define (make-rat n d)
+  (let ((g (gcd n d)))
+    (cons (/ n g) (/ d g))))
+
