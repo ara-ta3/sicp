@@ -7,3 +7,9 @@ test:
 
 watch-test:
 	watch $(gosh) test/ques$(i).scm
+
+test-p:
+	$(gosh) test/p$(i).scm
+
+watch-test-p:
+	watch $(gosh) test/p$(i).scm
