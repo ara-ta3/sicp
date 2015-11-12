@@ -1,0 +1,13 @@
+#!/bin/sh
+
+result=`gosh $1`
+sum=`echo "$result"|grep -c 'test'`
+ok=`echo "$result"|grep -c 'ok'`
+ng=`echo "$result"|grep -c 'ERROR'`
+errors=`echo "$result"|grep ERROR`
+message="$ok / $sum successed"
+errorMessage="$ng / $sum tests failed\n$errors"
+
+echo "\033[0;32m$1\033[0;39m"
+echo "\t\033[0;32m$message\033[0;39m"
+echo "$result"|grep -c ERROR|xargs -n 1 test 0 -eq || echo >&2 "\033[0;31m$errorMessage\033[0;39m"

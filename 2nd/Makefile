@@ -15,6 +15,5 @@ watch-test-p:
 	watch $(gosh) test/p$(i).scm
 
 test-all:
-	find ./test -name "*.scm" |xargs -n 1 $(gosh)
-
+	find ./test -name "*.scm" |xargs -n 1 ../util/runtest
 

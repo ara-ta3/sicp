@@ -23,8 +23,8 @@
 ; xのことを0とかんがえると良さそう
 ; fを作用させた回数を数として名前をつけてるっぽい
 
-(print (add-1 zero))
-(print (add-1 one))
+;(print (add-1 zero))
+;(print (add-1 one))
 
 ;(add-1 zero)
 ;(lambda (f) (lambda (x) (f ((n f) x))) zero)
