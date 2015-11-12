@@ -5,10 +5,13 @@ gulp.task('test2nd', function(){
     var options = {
         continueOnError: true
     };
+    var reportOptions = {
+        stdout: false
+    };
 
     gulp.src('')
     .pipe(exec('make -C 2nd test-all', options))
-    .pipe(exec.reporter());
+    .pipe(exec.reporter(reportOptions));
 });
 
 gulp.task('default', ['test2nd']);
