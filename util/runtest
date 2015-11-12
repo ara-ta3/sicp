@@ -6,7 +6,7 @@ ok=`echo "$result"|grep -c 'ok'`
 ng=`echo "$result"|grep -c 'ERROR'`
 errors=`echo "$result"|grep ERROR`
 message="$ok / $sum successed"
-errorMessage="$ng / $sum tests failed\n$errors"
+errorMessage="$1\n$ng / $sum tests failed\n$errors"
 
 echo "\033[0;32m$1\033[0;39m"
 echo "\t\033[0;32m$message\033[0;39m"
