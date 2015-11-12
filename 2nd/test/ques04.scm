@@ -1,6 +1,6 @@
 (use gauche.test)
 
-(load "../ques04.scm")
+(load "./ques04.scm")
 
 (test "(cons 3 5)に対してcarが3を返すこと" 3 (lambda () (car (cons 3 5))))
 
