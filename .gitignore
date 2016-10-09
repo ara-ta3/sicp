@@ -36,3 +36,9 @@ src
 .idea/
 Read the Docs
 config.rst
+
+bin/
+lib/
+share/
+pip-selfcheck.json
+pyvenv.cfg
