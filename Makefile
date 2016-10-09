@@ -1,6 +1,4 @@
 .PHONY: requirements.txt
-gulp=./node_modules/.bin/gulp
-npm=$(shell which npm)
 
 install: env/bin/pip
 	$< install -r requirements.txt
